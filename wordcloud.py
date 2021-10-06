@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 23 18:56:49 2021
 
-@author: Dell
-"""
 import wordcloud
 from matplotlib import pyplot as plt
 #from IPython.display import display
@@ -17,6 +13,7 @@ from matplotlib import pyplot as plt
 file_contents=input("Paste the contents here:")
 
 def calculate_frequencies(file_contents):
+    
     #list of punctuations and uninteresting words
     punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
     uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an",
@@ -29,7 +26,7 @@ def calculate_frequencies(file_contents):
                            "any", "both", "each", "few", "more", "some", "such", "no",
                            "nor", "too", "very", "can", "will", "just"]
     
-    # LEARNER CODE START HERE
+    # CODE STARTS HERE
     refined_text = ""
     frequency_count = {}
     
